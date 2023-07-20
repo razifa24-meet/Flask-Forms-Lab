@@ -8,12 +8,20 @@
 <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 
 </head>
-<body>
+<body id = haref>
+{% if name in friends%}
+<h1>true</h1>
+{% else%}
+<h1>false</h1>
+{% endif %}
 
-<h1>{%if name in list:%}</h1>
-<h1>Friend exists</h1>
-{%else%}
-<h1>Friend doesn't exist</h1>
-{%endif%}
+
+
+
+
+
+
+
+
 </body>
 </html>
